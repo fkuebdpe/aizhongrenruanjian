@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>广告展示</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5387839826697987"
+        crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>广告展示</h1>
+        <nav>
+            <a href="index.html"><i class="fas fa-home"></i> 首页</a>
+            <a href="message.html"><i class="fas fa-ad"></i> 广告</a>
+        </nav>
+    </header>
+    <main>
+        <section class="ad-form">
+            <h2>上传新广告</h2>
+            <form id="adForm" enctype="multipart/form-data">
+                <input type="text" id="adTitle" placeholder="广告标题" required>
+                <textarea id="adContent" placeholder="广告内容" required></textarea>
+                <input type="text" id="taobaoLink" placeholder="淘宝客链接">
+                <input type="file" id="productImage" accept="image/*" placeholder="产品图片">
+                <input type="file" id="qrCode" accept="image/*" placeholder="二维码图片">
+                <button type="submit">提交广告</button>
+            </form>
+        </section>
+        <section class="ad-list">
+            <h2>广告列表</h2>
+            <div id="ads"></div>
+        </section>
+    </main>
+    <script src="js/message.js"></script>
+</body>
+</html>

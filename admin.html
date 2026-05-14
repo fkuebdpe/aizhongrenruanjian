@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后台管理</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>后台管理系统</h1>
+    <nav>
+      <a href="deploy.html"><i class="fas fa-server"></i> 服务器部署</a>
+      <a href="index.html"><i class="fas fa-home"></i> 返回首页</a>
+    </nav>
+  </header>
+  
+  <main>
+    <h2>软件上传</h2>
+    <div class="upload-form">
+      <form id="adminUploadForm" enctype="multipart/form-data">
+        <div class="form-group">
+          <label>选择软件包：</label>
+          <input type="file" name="softwareFile" required>
+        </div>
+        <div class="form-group">
+          <label>软件名称：</label>
+          <input type="text" name="softwareName" required>
+        </div>
+        <div class="form-group">
+          <label>软件描述：</label>
+          <textarea name="softwareDescription" rows="3" required></textarea>
+        </div>
+        <div class="progress-container">
+          <div class="progress-bar" id="uploadProgress"></div>
+        </div>
+        <button type="submit">开始上传</button>
+      </form>
+    </div>
+  </main>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
